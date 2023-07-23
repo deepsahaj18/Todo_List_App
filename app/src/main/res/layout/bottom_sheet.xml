@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginVertical="8dp"
         android:text="ADD NEW TODO"
-        android:textColor="#3A98B9"
+        android:textColor="#134611"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,9 +26,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="8dp"
-        app:boxStrokeColor="#000000"
-        app:helperTextTextColor="#000000"
-        app:hintTextColor="#000000"
+        app:boxStrokeColor="#134611"
+        app:helperTextTextColor="#134611"
+        app:hintTextColor="#134611"
+        android:textColorHint="#134611"
         app:layout_constraintTop_toBottomOf="@+id/bottomSheetTitle"
         app:placeholderTextColor="#000000"
         app:prefixTextColor="#000000"
@@ -40,7 +41,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Add a Title"
-            android:textColor="@color/black"
+            android:textColor="#134611"
+            android:textColorHint="@color/black"
             android:textCursorDrawable="@drawable/cursor" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -49,9 +51,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="8dp"
-        app:boxStrokeColor="#000000"
-        app:helperTextTextColor="#000000"
-        app:hintTextColor="@color/black"
+        app:boxStrokeColor="#134611"
+        app:helperTextTextColor="#134611"
+        app:hintTextColor="#134611"
+        android:textColorHint="#134611"
         app:layout_constraintTop_toBottomOf="@+id/tielTitle"
         tools:layout_editor_absoluteX="1dp">
 
@@ -70,6 +73,7 @@
         android:layout_height="wrap_content"
         android:layout_marginVertical="18dp"
         android:text="Add to Todo"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tielDesc" />

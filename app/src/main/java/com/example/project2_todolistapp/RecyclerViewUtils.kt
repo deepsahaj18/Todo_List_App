@@ -6,10 +6,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.project2_todolistapp.databinding.TodoListItemBinding
 import com.example.project2_todolistapp.db.Todo
+import com.example.project2_todolistapp.db.TodoDao
 
 class TodoListViewHolder(private val itemBinding: TodoListItemBinding) : RecyclerView.ViewHolder(itemBinding.root){
     fun bindData(todo: Todo){
-        itemBinding.cdItemTodo.isChecked = todo.isDone
+//        itemBinding.cdItemTodo.isChecked = todo.isDone
         itemBinding.itemTodoTitle.text = todo.title
         itemBinding.tvItemTodoDesc.text = todo.desc
         itemBinding.tvItemTodoDate.text=todo.date.toString()
@@ -29,6 +30,7 @@ class TodoListAdapter(
                     parent,
                     false))
     }
+
 
     override fun getItemCount() = listOfTodos.size
 
