@@ -14,6 +14,7 @@ data class Todo(
     val title: String,
     val desc: String,
     val date: Date,
+    var deleted: Boolean = false
 )
 
 

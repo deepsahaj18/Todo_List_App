@@ -3,4 +3,8 @@
     <string name="addTodo">addTodo</string>
     <string name="delete">Delete</string>
     <string name="my_todo">MY TODO</string>
+    <string name="back_to_main">Back</string>
+    <string name="recycle_bin">Completed Todos</string>
+    <string name="completed">Completed Todos</string>
+    <string name="deleteAll">Delete Recycle Bin</string>
 </resources>

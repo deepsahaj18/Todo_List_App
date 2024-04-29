@@ -14,6 +14,26 @@
     android:paddingVertical="50dp"
     >
 
+    <TextView
+        android:id="@+id/tvWelcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#134611"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="50sp"
+        android:layout_marginEnd="50sp"
+        android:gravity="center"
+        android:text="Welcome, User!"
+        android:layout_marginBottom="180sp"
+        app:layout_constraintTop_toBottomOf="@id/tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
 
 
     <androidx.recyclerview.widget.RecyclerView
@@ -51,6 +71,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:contentDescription="@string/addTodo" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnRecycleBin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recycle Bin"
+        android:onClick="onRecycleBinClicked"
+        android:layout_margin="16dp"
+        android:backgroundTint="#134611"
+        app:tint="@color/white"
+        android:src="@drawable/baseline_completed_24"
+        app:layout_constraintBottom_toTopOf="@id/fabDelete"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/completed" />
+
     <TextView
         android:id="@+id/tv"
         android:layout_width="wrap_content"
@@ -75,6 +109,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:background="@mipmap/ic_toolbar_new_foreground"/>
+
+
 
 
 

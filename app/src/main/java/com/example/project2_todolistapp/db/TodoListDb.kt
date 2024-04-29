@@ -5,7 +5,7 @@ import androidx.room.RoomDatabase
 import androidx.room.TypeConverter
 import androidx.room.TypeConverters
 
-@Database(entities = [Todo::class], version = 1)
+@Database(entities = [Todo::class], version = 2)
 @TypeConverters(DateConverter::class)
 abstract class TodoListDb:RoomDatabase() {
     abstract fun todoDao():TodoDao
